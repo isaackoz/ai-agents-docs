@@ -1,0 +1,4 @@
+interface:
+  display_name: "Isaac Svelte"
+  short_description: "Build Svelte apps with project conventions"
+  default_prompt: "Use $ik-svelte to build or refactor a Svelte app with Isaac frontend conventions."

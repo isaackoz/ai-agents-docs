@@ -1,0 +1,4 @@
+interface:
+  display_name: "Isaac Stack"
+  short_description: "Use Isaac Go, Svelte, and ConnectRPC defaults"
+  default_prompt: "Use $isaac-stack to plan or build a project with the Isaac Go, SvelteKit SPA, and ConnectRPC stack."

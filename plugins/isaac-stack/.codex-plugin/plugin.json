@@ -1,0 +1,33 @@
+{
+  "name": "isaac-stack",
+  "version": "0.1.0",
+  "description": "Reusable Codex skills for Isaac's Go, SvelteKit SPA, and ConnectRPC stack.",
+  "author": {
+    "name": "Isaac Koz"
+  },
+  "license": "MIT",
+  "keywords": [
+    "go",
+    "sveltekit",
+    "connectrpc",
+    "protobuf",
+    "protovalidate"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Isaac Stack",
+    "shortDescription": "Go, SvelteKit SPA, and ConnectRPC conventions",
+    "longDescription": "Reusable Codex skills for building and refactoring Isaac-stack projects with Go backends, SvelteKit SPA frontends, ConnectRPC transport, protobuf contracts, and protovalidate validation.",
+    "developerName": "Isaac Koz",
+    "category": "Productivity",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Use Isaac Stack to plan a new app.",
+      "Use Isaac Stack to add a ConnectRPC feature.",
+      "Use Isaac Stack to review this project."
+    ]
+  }
+}

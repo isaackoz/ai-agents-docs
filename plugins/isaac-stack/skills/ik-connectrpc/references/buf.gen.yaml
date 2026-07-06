@@ -1,0 +1,23 @@
+version: v2
+plugins:
+  - local: [go, tool, protoc-gen-go]
+    out: ../internal/gen
+    opt:
+      - paths=source_relative
+  - local: [go, tool, protoc-gen-connect-go]
+    out: ../internal/gen
+    opt:
+      - paths=source_relative
+      - simple
+  - local: ../node_modules/@bufbuild/protoc-gen-es/bin/protoc-gen-es
+    out: ../frontend/src/lib/gen
+    include_imports: true
+    opt: target=ts
+managed:
+  enabled: true
+  override:
+    - file_option: go_package_prefix
+      value: github.com/isaackoz/PROJECT/internal/gen
+  disable:
+    - file_option: go_package
+      module: buf.build/bufbuild/protovalidate

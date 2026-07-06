@@ -1,0 +1,4 @@
+interface:
+  display_name: "Isaac ConnectRPC"
+  short_description: "Build protobuf and ConnectRPC transport"
+  default_prompt: "Use $ik-connectrpc to design or update protobuf contracts and ConnectRPC transport."

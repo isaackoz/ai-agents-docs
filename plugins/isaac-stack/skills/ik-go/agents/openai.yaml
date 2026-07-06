@@ -1,0 +1,4 @@
+interface:
+  display_name: "Isaac Go"
+  short_description: "Build Go backends with Isaac conventions"
+  default_prompt: "Use $ik-go to create or refactor a Go backend with Isaac project conventions."
