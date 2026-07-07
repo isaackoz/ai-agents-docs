@@ -18,6 +18,7 @@ Use:
 - `connectrpc.com/validate` with protovalidate on all RPC handlers.
 - `pgx/v5/pgxpool` for Postgres connections, `sqlx` for pragmatic SQL mapping, `sqlc` for typed query generation when established or useful, and `goose` for migrations.
 - Vertical feature packages under `internal/features/<feature>` for feature-owned repository, service, and server code.
+- App-level user-message errors that are wrapped with `%w`, logged once at the transport boundary, and converted to ConnectRPC errors there.
 
 Treat Azure identity, OpenTelemetry, background workers, and special CORS origins as project-specific hooks, not mandatory boilerplate.
 
@@ -44,6 +45,9 @@ Keep `cmd` thin: load config, initialize logger/DB/migrations/dependencies, regi
 - Pass `context.Context` through every service and repository method that touches I/O.
 - Keep repositories SQL-focused and services business-focused. Transport servers adapt RPC requests to services.
 - Return useful errors and map them to Connect errors at the transport boundary when needed.
+- Use `slog` for error logging. Configure dev text/color logging and prod JSON/no-color logging during startup.
+- Log every request through middleware with request path, duration, source IP, request ID, and user ID from the auth context when available.
+- Always wrap errors with `%w`; do not repeatedly log the same error as it bubbles up. Log it once at the transport boundary, or once at the owner boundary for background work.
 - Register public and protected handler option sets separately when auth differs.
 - Put `validate.NewInterceptor()` in the ConnectRPC interceptor chain for both public and protected handlers.
 - Add health/readiness endpoints and graceful shutdown for long-running servers.

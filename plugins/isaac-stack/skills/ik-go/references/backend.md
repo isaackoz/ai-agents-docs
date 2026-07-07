@@ -26,6 +26,8 @@ Use shared platform packages only for cross-cutting concerns:
 internal/platform/db/
 internal/platform/auth/
 internal/platform/observability/
+internal/platform/logging/
+internal/platform/apperr/
 ```
 
 Avoid dumping feature logic into broad `service` or `repo` packages unless the target repo already uses that pattern.
@@ -40,6 +42,47 @@ Avoid dumping feature logic into broad `service` or `repo` packages unless the t
 - Register generated handlers with `New<Service>Handler(server, options...)`.
 - Add `/healthz` or the project's readiness endpoint before wrapping middleware.
 - Use `http.Server.Shutdown` with a timeout on SIGINT/SIGTERM.
+
+## Logging
+
+- Use `log/slog` as the backend logging API.
+- Initialize logging once during startup, usually from `cmd/<server>/main.go` through `internal/platform/logging`.
+- Support two initial modes:
+  - `dev`: text logs to the console with color for local readability.
+  - `prod`: JSON logs with no color for production log ingestion.
+- Attach request IDs to request contexts in middleware or interceptors. Include the request ID in every request-scoped log record.
+- Log every request once through middleware, including at least request path, request duration, source IP address, request ID, and user ID from the auth context when available.
+- Capture request duration in the middleware that wraps the final handler. If useful, also capture status code by wrapping `http.ResponseWriter`.
+- Resolve source IP consistently. Prefer a trusted proxy-aware helper for `X-Forwarded-For`/`Forwarded` only when the app is behind known proxies; otherwise use `RemoteAddr`.
+- For background or async operations started by a request, carry the initiating request ID into the operation context or logger fields when applicable.
+- Keep log calls out of ordinary repository/service error paths. Return wrapped errors upward and let the boundary that owns the operation log once.
+
+## Application Errors
+
+- Add a small global app-level error package, usually `internal/platform/apperr`, for user-safe errors.
+- Prefer a type with only the fields the app actually needs by default:
+
+```go
+type Error struct {
+	UserMessage     string
+	InternalMessage string
+}
+```
+
+- `UserMessage` is safe to show to users. `InternalMessage` is for logs and debugging context only.
+- Do not start with numeric codes or broad categories unless a product/API contract later needs them.
+- Anywhere in the app may create or wrap an app error with a user message.
+- Always wrap errors with `%w` as they move through repository, service, background, and transport code:
+
+```go
+return fmt.Errorf("create invoice for account %s: %w", accountID, err)
+```
+
+- Avoid logging the same error at every layer. Bubble the wrapped error chain up and log it once at the owner boundary.
+- At the transport boundary, inspect the error chain for the first app error with a `UserMessage`. Return that user message to the client.
+- If no app error exists in the chain, return a generic user-safe message such as `An unknown error occurred`.
+- Always log the full original error chain at the boundary with `slog.ErrorContext` so backend logs retain the traceable internal context.
+- For background workers or async operations, the owner boundary is the worker/job runner. Log the full error once there, including the initiating request ID if there is one.
 
 ## Data Access
 
@@ -64,5 +107,7 @@ Avoid dumping feature logic into broad `service` or `repo` packages unless the t
 
 - Transport servers should be thin adapters from generated request/response types to service calls.
 - Use generated protobuf constructors/types instead of hand-rolled DTOs at RPC boundaries.
-- Convert domain errors to `connect.NewError` at the boundary when clients need stable codes.
+- Convert app-level user-message errors to `connect.NewError` at the boundary.
+- The transport error layer should log the full original error once, choose the first safe `UserMessage` from the wrapped chain, and map it to a Connect-friendly error.
+- Use a generic Connect internal error message when no app-level user message is present.
 - Do not import frontend concepts into backend packages.
