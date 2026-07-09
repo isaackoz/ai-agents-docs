@@ -35,9 +35,10 @@ Inspect the target repo first. Preserve existing structure and scripts when they
 For new projects, set up in this order:
 
 1. Create the repo skeleton and Go module.
-2. Create `proto/` and configure Buf/protovalidate.
-3. Generate Go and TypeScript bindings.
-4. Wire the Go ConnectRPC server.
-5. Create the SvelteKit SPA and generated client/query/form usage.
+2. Read `references/dev-environment.md` and establish the shared Taskfile/dev server defaults.
+3. Create `proto/` and configure Buf/protovalidate.
+4. Generate Go and TypeScript bindings.
+5. Wire the Go ConnectRPC server.
+6. Create the SvelteKit SPA and generated client/query/form usage.
 
 When a change crosses boundaries, change the proto contract first, regenerate bindings, then update backend and frontend call sites.

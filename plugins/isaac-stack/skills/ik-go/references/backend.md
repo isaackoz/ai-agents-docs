@@ -86,6 +86,11 @@ return fmt.Errorf("create invoice for account %s: %w", accountID, err)
 
 ## Data Access
 
+- Before scaffolding database code for a new project, ask the user to choose Postgres, SQLite, or SQL Server.
+- Read the matching database reference before implementing repositories, migrations, or query generation:
+  - `references/databases/postgres.md`
+  - `references/databases/sqlite.md`
+  - `references/databases/sql-server.md`
 - Use `pgxpool.Pool` for connection pooling.
 - Use `stdlib.OpenDBFromPool` when a library needs `database/sql`.
 - Use `sqlx` for pragmatic row scanning and named queries; keep SQL explicit.
@@ -101,7 +106,7 @@ return fmt.Errorf("create invoice for account %s: %w", accountID, err)
 - Wrap generated `Queries` in the feature repository so services do not depend directly on sqlc types unless those types are intentional API.
 - Use `pgx/v5` or the repo's existing sqlc driver. Pass `context.Context` and use `pgx.Tx`/sqlc `WithTx` patterns for transactions.
 - Do not edit generated `*.sql.go` files. Change the migration or `.sql` query and regenerate.
-- Prefer one named query per use case. Use `sqlx` or handwritten repository code for highly dynamic filters/reporting when sqlc would force awkward query generation.
+- Prefer one named query per use case. Use manual dynamic query builders for highly dynamic pagination, complex filters, or reporting when sqlc would force awkward query generation.
 
 ## Transport Boundaries
 

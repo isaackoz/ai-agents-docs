@@ -31,6 +31,7 @@ For new projects:
 4. Replace the `go_package_prefix` placeholder in `buf.gen.yaml` with the target Go module plus `/internal/gen`.
 5. Ensure Go generator tools are available through the target repo's normal tool setup.
 6. Generate bindings with the existing script (`task genproto`, `make genproto`) or `cd proto && buf generate`.
+7. For the server deployment, when using ConnectRPC follow the guidelines at https://connectrpc.com/docs/go/deployment for the http server setup, CORS, and timeouts.  
 
 ## Proto Rules
 
