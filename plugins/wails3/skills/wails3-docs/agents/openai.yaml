@@ -1,0 +1,4 @@
+interface:
+  display_name: "Wails 3 Docs"
+  short_description: "Build Wails 3 apps with current beta APIs"
+  default_prompt: "Use $wails3-docs to build or update a Wails 3 application with current APIs."

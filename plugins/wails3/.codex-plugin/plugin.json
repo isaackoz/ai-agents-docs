@@ -1,0 +1,36 @@
+{
+  "name": "wails3",
+  "version": "0.1.0",
+  "description": "Current beta documentation and implementation guidance for building Wails 3 applications.",
+  "author": {
+    "name": "Isaac Koz"
+  },
+  "homepage": "https://v3.wails.io/",
+  "repository": "https://github.com/isaackoz/ai-agents-docs",
+  "license": "MIT",
+  "keywords": [
+    "wails",
+    "wails3",
+    "go",
+    "desktop",
+    "webview"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Wails 3",
+    "shortDescription": "Current Wails 3 beta development guidance",
+    "longDescription": "Build, migrate, package, and troubleshoot Wails 3 applications using a curated, LLM-friendly snapshot of the current beta documentation.",
+    "developerName": "Isaac Koz",
+    "category": "Productivity",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://v3.wails.io/",
+    "defaultPrompt": [
+      "Create a Wails 3 app with a Go service.",
+      "Add a native Wails 3 desktop feature.",
+      "Migrate this Wails v2 code to v3."
+    ]
+  }
+}

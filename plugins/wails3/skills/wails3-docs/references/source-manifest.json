@@ -1,0 +1,672 @@
+{
+  "schema_version": 1,
+  "upstream_repository": "https://github.com/wailsapp/wails",
+  "upstream_docs_root": "docs/src/content/docs",
+  "upstream_commit": "495a094dac8948d5ecc86c48e268cf69c3c13360",
+  "snapshot_date": "2026-08-13",
+  "snapshot_version": "v3.0.0-beta.8",
+  "scope": "English builder documentation: setup, concepts, features, guides, API references, tutorials, migration, beta status/changelog, FAQ, and troubleshooting.",
+  "pages": [
+    {
+      "source": "changelog.mdx",
+      "title": "Changelog",
+      "reference": "references/migration-troubleshooting.md",
+      "sha256": "96895506007f6522863c9c6bf696b780b5758250a5ea7984ff794354b0be53f7"
+    },
+    {
+      "source": "concepts/architecture.mdx",
+      "title": "How Wails Works",
+      "reference": "references/core-architecture.md",
+      "sha256": "f86e4ad0d65c954fdefdc0d553e3f1b9d19b38700d087f92aad1b34fdc37ca3d"
+    },
+    {
+      "source": "concepts/bridge.mdx",
+      "title": "Go-Frontend Bridge",
+      "reference": "references/core-architecture.md",
+      "sha256": "bab2110369d0f895fe3844fd04ccc4c3c5d586b845e2db10c3fc8ed8ac216266"
+    },
+    {
+      "source": "concepts/build-system.mdx",
+      "title": "Build System",
+      "reference": "references/core-architecture.md",
+      "sha256": "7ad1d69e2b09e2103daa85fdad728718eb0a3928e9e4fddaae364ad0807fc07c"
+    },
+    {
+      "source": "concepts/lifecycle.mdx",
+      "title": "Application Lifecycle",
+      "reference": "references/core-architecture.md",
+      "sha256": "1925e62ccf98ef2feff2de72d7d61c651f5d716d78933facffbf549303165148"
+    },
+    {
+      "source": "concepts/manager-api.mdx",
+      "title": "Manager API",
+      "reference": "references/core-architecture.md",
+      "sha256": "45de9d312e75ef1683f1d0add37beadd44a33442c0acbe3d3b0af9a095b9265c"
+    },
+    {
+      "source": "experimental/index.mdx",
+      "title": "Experimental Features",
+      "reference": "references/experimental.md",
+      "sha256": "640088ba33129579c6078814ba0e3607e2ae26ce4fd5517b68385427f58c4cdd"
+    },
+    {
+      "source": "experimental/wake.mdx",
+      "title": "Wake",
+      "reference": "references/experimental.md",
+      "sha256": "122f66ef67e70f972ed6bc0491db5a57c65bebfb5fb2c889bdae8e1ecee51d30"
+    },
+    {
+      "source": "faq.mdx",
+      "title": "Frequently Asked Questions",
+      "reference": "references/migration-troubleshooting.md",
+      "sha256": "c0bbfa939600de64da232506606fa72a9e9f65f59f9079aa07e4e0c4f3802835"
+    },
+    {
+      "source": "features/autostart/basics.mdx",
+      "title": "Autostart",
+      "reference": "references/system-integrations.md",
+      "sha256": "329240bbbb2c2ca8ef0edfe66a5362bcdbcb2316a6de941e8e4fc617067feb61"
+    },
+    {
+      "source": "features/bindings/advanced.mdx",
+      "title": "Advanced Binding",
+      "reference": "references/bindings-services.md",
+      "sha256": "4323389f72bd2d3ef8250ebdfb9c2a399ec95c59b6d8b4d78cc36c33cb752524"
+    },
+    {
+      "source": "features/bindings/best-practices.mdx",
+      "title": "Bindings Best Practices",
+      "reference": "references/bindings-services.md",
+      "sha256": "d6fab03c1d8939f3fb362cba1f46a158c52eb922013ce62d0cf6217f3d42c9e0"
+    },
+    {
+      "source": "features/bindings/enums.mdx",
+      "title": "Enums",
+      "reference": "references/bindings-services.md",
+      "sha256": "4a57aaa121640bfa8712e574a875537396634ee036043dec6a527605238ef9c0"
+    },
+    {
+      "source": "features/bindings/methods.mdx",
+      "title": "Method Bindings",
+      "reference": "references/bindings-services.md",
+      "sha256": "a1ad5a4c5d63c0565832d51bd8d43bed86ec02b35a6187affef53281929fdc17"
+    },
+    {
+      "source": "features/bindings/models.mdx",
+      "title": "Data Models",
+      "reference": "references/bindings-services.md",
+      "sha256": "d84a6b6bbc40e3d45bfd0340e870eae0476f6ff11eef6175ae6217538075425f"
+    },
+    {
+      "source": "features/bindings/services.mdx",
+      "title": "Services",
+      "reference": "references/bindings-services.md",
+      "sha256": "718f31b1ba16e85a936dc8b7a2bf107f3d897b9a90a7586c85c237345e3e1bfb"
+    },
+    {
+      "source": "features/browser/integration.mdx",
+      "title": "Browser Integration",
+      "reference": "references/system-integrations.md",
+      "sha256": "f34e92d2c88e18350ff6d1c97d624b58aebc2ca878a0284ff753369e7a796ccc"
+    },
+    {
+      "source": "features/clipboard/basics.mdx",
+      "title": "Clipboard Operations",
+      "reference": "references/system-integrations.md",
+      "sha256": "037a8009d85689fbcfa02422ff13053dea286afd1651e13fcf7fbafb426ff5e4"
+    },
+    {
+      "source": "features/dialogs/custom.mdx",
+      "title": "Custom dialogs",
+      "reference": "references/dialogs-drag-drop.md",
+      "sha256": "6bb360af93dcae5d1f6923f53c42ce5936e3cca825e87500557e1d11d9efdb69"
+    },
+    {
+      "source": "features/dialogs/file.mdx",
+      "title": "File dialogs",
+      "reference": "references/dialogs-drag-drop.md",
+      "sha256": "077fba2fad2edff82752902dbbc3c5c0ee1a6e296590edbbe3eb7cbf9242493f"
+    },
+    {
+      "source": "features/dialogs/message.mdx",
+      "title": "Message dialogs",
+      "reference": "references/dialogs-drag-drop.md",
+      "sha256": "b1db64b4fe7f224043451ed8f24d9419122b7723c0ff79d3914bb50c9187887c"
+    },
+    {
+      "source": "features/dialogs/overview.mdx",
+      "title": "dialogs Overview",
+      "reference": "references/dialogs-drag-drop.md",
+      "sha256": "cf3f6091f7aa4d2dc280bdf522864f1845f8a64fc87637b5a4edb6c5742bb1f3"
+    },
+    {
+      "source": "features/drag-and-drop/files.mdx",
+      "title": "File Drop",
+      "reference": "references/dialogs-drag-drop.md",
+      "sha256": "0c0934c0c55e2596518620fad777ab86b8691a81d97ecfca686bc2c7f5dff360"
+    },
+    {
+      "source": "features/drag-and-drop/html.mdx",
+      "title": "HTML Drag & Drop",
+      "reference": "references/dialogs-drag-drop.md",
+      "sha256": "243901ef7bce68cf2e30b8c1f9d480d5303bb82f7e7649da66c70867759903c3"
+    },
+    {
+      "source": "features/environment/info.mdx",
+      "title": "Environment",
+      "reference": "references/system-integrations.md",
+      "sha256": "c01908bf1a5e7a28e142deec38586d0e9556bba604d54ebd75f07024906c504a"
+    },
+    {
+      "source": "features/events/system.mdx",
+      "title": "Event System",
+      "reference": "references/events-streams.md",
+      "sha256": "bd8fffb4c80dc10293e34d5898ab21e5d109c6a7bc85493efa4bbfcaae75ad64"
+    },
+    {
+      "source": "features/keyboard/global-shortcuts.mdx",
+      "title": "Global Shortcuts",
+      "reference": "references/menus-keyboard.md",
+      "sha256": "b62c726cf06a8222917cc9659188d1463534bac8aba07cb8fa30af912a1dda22"
+    },
+    {
+      "source": "features/keyboard/shortcuts.mdx",
+      "title": "Keyboard Shortcuts",
+      "reference": "references/menus-keyboard.md",
+      "sha256": "4a70138be373af283a42f2dcdac5cee13052608b355e024a2306277b39fc2a86"
+    },
+    {
+      "source": "features/menus/application.mdx",
+      "title": "Application Menus",
+      "reference": "references/menus-keyboard.md",
+      "sha256": "b34b8bea24193f9486765cddf2262ba8dd9238ad049cb6f24724e395a374bd15"
+    },
+    {
+      "source": "features/menus/context.mdx",
+      "title": "Context Menus",
+      "reference": "references/menus-keyboard.md",
+      "sha256": "bc019d5b562abe83bffdb8ec761f0f55a27d546fb1d9099ea314d0e8779cbab7"
+    },
+    {
+      "source": "features/menus/reference.mdx",
+      "title": "Menu Reference",
+      "reference": "references/menus-keyboard.md",
+      "sha256": "d3339fc277f7b0611cb4af3cddd0d153020cc4ae226268e1a5d29e73916a8110"
+    },
+    {
+      "source": "features/menus/systray.mdx",
+      "title": "System Tray Menus",
+      "reference": "references/menus-keyboard.md",
+      "sha256": "076b55505b6ca6adaedae6ec20f0c01d7c8b5556e920824edfb588943aa45b8d"
+    },
+    {
+      "source": "features/notifications/overview.mdx",
+      "title": "Notifications",
+      "reference": "references/system-integrations.md",
+      "sha256": "23ac4e6829475abff1526b816865151310accd421f8c598bdbda2c3193e2eb1f"
+    },
+    {
+      "source": "features/platform/dock.mdx",
+      "title": "Dock & Taskbar",
+      "reference": "references/system-integrations.md",
+      "sha256": "ef012a9e3e9c125cb276184451019da14053327f9487b2bf87456e81bea75cfd"
+    },
+    {
+      "source": "features/screens/info.mdx",
+      "title": "Screen Information",
+      "reference": "references/system-integrations.md",
+      "sha256": "e1d0e86da818c52dc8c37ddbd5e1d0d39947d89c13fcd50aa25dbd107398bada"
+    },
+    {
+      "source": "features/windows/basics.mdx",
+      "title": "Window Basics",
+      "reference": "references/windows.md",
+      "sha256": "ab75629e1fb32b0a160c9bc154afca77c9755dbe51a187c2307e6c43333053df"
+    },
+    {
+      "source": "features/windows/events.mdx",
+      "title": "Window Events",
+      "reference": "references/windows.md",
+      "sha256": "ae96b28bf4e9418f7a72b38020f23989b829739c3b4a0427a93b753f98297f28"
+    },
+    {
+      "source": "features/windows/frameless.mdx",
+      "title": "Frameless Windows",
+      "reference": "references/windows.md",
+      "sha256": "53e859917c25b3d0c9ab9769de9da21622ee6c184be20b084c377dfb4deb04c0"
+    },
+    {
+      "source": "features/windows/multiple.mdx",
+      "title": "Multiple Windows",
+      "reference": "references/windows.md",
+      "sha256": "76ff8f66a5a92bfcf985542677ad703932d330767898a6220051b9cb155bd3bb"
+    },
+    {
+      "source": "features/windows/options.mdx",
+      "title": "Window Options",
+      "reference": "references/windows.md",
+      "sha256": "fd69d61de97ffc1ccc665f85509e733a3a2654b194cc1aec0bf5c752d36e1873"
+    },
+    {
+      "source": "features/windows/permissions.mdx",
+      "title": "Permissions",
+      "reference": "references/windows.md",
+      "sha256": "d68299180875ea24bde9001f119c21d948278b60272bc498b3a085b2e73e4594"
+    },
+    {
+      "source": "getting-started/installation.mdx",
+      "title": "Installation",
+      "reference": "references/setup-cli.md",
+      "sha256": "b18f67bc2274057257908a835335e632f0572eab55b55f1646074886a9550a25"
+    },
+    {
+      "source": "getting-started/setup.mdx",
+      "title": "Setup",
+      "reference": "references/setup-cli.md",
+      "sha256": "b6240c62efae592be0e173de175629856294f1447c146de962a125a0290fa2e6"
+    },
+    {
+      "source": "getting-started/your-first-app.mdx",
+      "title": "Your First Application",
+      "reference": "references/setup-cli.md",
+      "sha256": "11888fa148570861487a2335e32e1ab380a9988a5568bd2a84c2c134cbe97aef"
+    },
+    {
+      "source": "guides/advanced/custom-templates.mdx",
+      "title": "Creating Custom Templates",
+      "reference": "references/setup-cli.md",
+      "sha256": "07075710bc70ab9815b3e2671905d4b4d082b6230c9a683d3313d82eccec662a"
+    },
+    {
+      "source": "guides/advanced/streams-internals.mdx",
+      "title": "Streams — internals",
+      "reference": "references/events-streams.md",
+      "sha256": "e850fa7f4c48182466b06d8a45370057f2d391466009583c4a00ea23ed3d68e4"
+    },
+    {
+      "source": "guides/architecture.mdx",
+      "title": "Architecture Patterns",
+      "reference": "references/core-architecture.md",
+      "sha256": "e5c01a6afe63afc66a4658e3686930cc2c202af5161a6ce6cfba2c86fd8e0a0d"
+    },
+    {
+      "source": "guides/build/building.mdx",
+      "title": "Building Applications",
+      "reference": "references/build-packaging.md",
+      "sha256": "ffaf8191a837ceb87a80be392a0fc0e6d71d64c0f8f5d99d13d60a790452e696"
+    },
+    {
+      "source": "guides/build/cross-platform.mdx",
+      "title": "Cross-Platform Building",
+      "reference": "references/build-packaging.md",
+      "sha256": "c545ea8bf5c4e293c962e41aba2bd02ac189072624ec8031e637e91fe4bce258"
+    },
+    {
+      "source": "guides/build/customization.mdx",
+      "title": "Build Customization",
+      "reference": "references/build-packaging.md",
+      "sha256": "cb55073c9149d3214b2109ebc0ddbf57496c19e2936e641fcd4d979bab0a02c2"
+    },
+    {
+      "source": "guides/build/linux.mdx",
+      "title": "Linux Packaging",
+      "reference": "references/build-packaging.md",
+      "sha256": "5edca25b1761d9dfb56536b0c98b7ac127487e0aa042ddf2c03770638f47a870"
+    },
+    {
+      "source": "guides/build/macos.mdx",
+      "title": "macOS Packaging",
+      "reference": "references/build-packaging.md",
+      "sha256": "6080a41ce66f7555801a86fd26506fe38218b976c5a2c1a403d21e995c40ebe7"
+    },
+    {
+      "source": "guides/build/obfuscation.mdx",
+      "title": "Obfuscated Builds",
+      "reference": "references/build-packaging.md",
+      "sha256": "c235b6da49e63f88ba882f5e9370ac7c7492c532d2bec1896c621e6ae0f9a2e3"
+    },
+    {
+      "source": "guides/build/signing.mdx",
+      "title": "Code Signing",
+      "reference": "references/build-packaging.md",
+      "sha256": "7f8fde657ed60f64fc872c4e0a4520f30f5d7dd8af54e20ec8cb3a32fe282059"
+    },
+    {
+      "source": "guides/build/windows.mdx",
+      "title": "Windows Packaging",
+      "reference": "references/build-packaging.md",
+      "sha256": "c8d6a897ae1fd517b368d15de5ae37ec31367d8ed3f43f136d2b80739adfcfb1"
+    },
+    {
+      "source": "guides/cli.mdx",
+      "title": "CLI Reference",
+      "reference": "references/setup-cli.md",
+      "sha256": "10f93fb2e44dc3f29b66288d2bd66a3d5d60551225048513d69df7188bf9fcd3"
+    },
+    {
+      "source": "guides/custom-transport.mdx",
+      "title": "Creating Custom Transport Layer",
+      "reference": "references/frontend-integration.md",
+      "sha256": "08cf50302beb76f10e343a22a743da125d5ab40e0fc5edbd525fbaadcc963ee2"
+    },
+    {
+      "source": "guides/customising-windows.mdx",
+      "title": "Customising Windows in Wails",
+      "reference": "references/windows.md",
+      "sha256": "9200d37007fbe58bf34ab814221d0650861bbca7e54ce7de2a14925da6d4185a"
+    },
+    {
+      "source": "guides/dev/debugging.mdx",
+      "title": "Debugging",
+      "reference": "references/development-testing.md",
+      "sha256": "e97d666ef867c7c0d0a7e90da30d7b11a805fbe892134c54f57e247b65fbdffc"
+    },
+    {
+      "source": "guides/dev/frontend-frameworks.mdx",
+      "title": "Using Other Frontend Frameworks",
+      "reference": "references/frontend-integration.md",
+      "sha256": "287bc70556a81b48119f43d6dbd8cc0bdaf4e921a337f2ffa66a710415991b39"
+    },
+    {
+      "source": "guides/dev/project-structure.mdx",
+      "title": "Project Structure",
+      "reference": "references/frontend-integration.md",
+      "sha256": "4261841595c2c18cfa757f3f54da6a28e1001145a8c7a20842c4731b22b18e88"
+    },
+    {
+      "source": "guides/distribution/custom-protocols.mdx",
+      "title": "Custom URL Protocols",
+      "reference": "references/distribution-updates.md",
+      "sha256": "e712c238eb33aa90822c54d31f1ac5c06d059d7d128c5eae8ddf3ac2b168602e"
+    },
+    {
+      "source": "guides/e2e-testing.mdx",
+      "title": "End-to-End Testing",
+      "reference": "references/development-testing.md",
+      "sha256": "b6fe94a03936288ef46d4f887b980d1590f7e72de381baba4d3f9b9489904189"
+    },
+    {
+      "source": "guides/events-reference.mdx",
+      "title": "Events Guide",
+      "reference": "references/events-streams.md",
+      "sha256": "c75ec103df8ce453ab17a80466f75fe29cbf2fc1bb7507ed379367145d820bd9"
+    },
+    {
+      "source": "guides/file-associations.mdx",
+      "title": "File Associations",
+      "reference": "references/distribution-updates.md",
+      "sha256": "52bdc3653f70dc35f1cbd1e263c8eff6bcea9afdb73c884537c9a833fc383062"
+    },
+    {
+      "source": "guides/gin-routing.mdx",
+      "title": "Using Gin for Routing",
+      "reference": "references/frontend-integration.md",
+      "sha256": "c00171acd20a14f2a32efc26759d43d56051f13773e5d144ac48f78b36ff0c92"
+    },
+    {
+      "source": "guides/gin-services.mdx",
+      "title": "Using Gin for Services",
+      "reference": "references/frontend-integration.md",
+      "sha256": "7f4be7f728c4b30a925f5b3990b63ce7da9e81adf892230de420454401fa97a9"
+    },
+    {
+      "source": "guides/installers.mdx",
+      "title": "Creating Installers",
+      "reference": "references/build-packaging.md",
+      "sha256": "74d679ff3a65de291ee3dc570fa0776fbed87e79f7dea293d052f9ae3534c008"
+    },
+    {
+      "source": "guides/mcp-service.mdx",
+      "title": "LLM Control (MCP)",
+      "reference": "references/experimental.md",
+      "sha256": "41670d257c1fff0475bbd22e0b9cd36ebb34c7acfa8a2b7df1020d080f96a0d3"
+    },
+    {
+      "source": "guides/menus.mdx",
+      "title": "Menus",
+      "reference": "references/menus-keyboard.md",
+      "sha256": "f65763e98aa43cd33c4369b22a9888ddafb7fab1c18724da812bf0ff88b4f90b"
+    },
+    {
+      "source": "guides/mobile/android.mdx",
+      "title": "Android",
+      "reference": "references/mobile.md",
+      "sha256": "5e2a634d30afb4f19eb47059f49c198db551d576b3dcac6795da5bc393de1c03"
+    },
+    {
+      "source": "guides/mobile/first-mobile-app.mdx",
+      "title": "Your First Mobile App",
+      "reference": "references/mobile.md",
+      "sha256": "6feefdc9367748a54aeb41aa7153518009547c420daa7931fa90e69d51b3ff5f"
+    },
+    {
+      "source": "guides/mobile/index.mdx",
+      "title": "Mobile Overview",
+      "reference": "references/mobile.md",
+      "sha256": "2e061e3d3afd5960bc5514d363e81dbddd0a71e3878f201a2159754d7a4fde8c"
+    },
+    {
+      "source": "guides/mobile/ios.mdx",
+      "title": "iOS",
+      "reference": "references/mobile.md",
+      "sha256": "6471095e2ef28efa1eaca1738681d8a9fb9b9b070f3aad53b0bb72a620f6311e"
+    },
+    {
+      "source": "guides/mobile/mobile-api.mdx",
+      "title": "Mobile API",
+      "reference": "references/mobile.md",
+      "sha256": "3747d6434bc64d882ec328e2ad03f57c80a55ef76035400d75c602941857a6c8"
+    },
+    {
+      "source": "guides/panic-handling.mdx",
+      "title": "Handling Panics",
+      "reference": "references/development-testing.md",
+      "sha256": "65473e8f16edfab08b22a9b057f1ac7b66ead3f2e0c4b12a92ad1aa4923475f7"
+    },
+    {
+      "source": "guides/performance.mdx",
+      "title": "Performance Optimisation",
+      "reference": "references/security-performance.md",
+      "sha256": "3a262a690284d0ac773c4645c180d247f3a1d7ebde0b22b6ac7a30ac9d5854de"
+    },
+    {
+      "source": "guides/raw-messages.mdx",
+      "title": "Raw Messages",
+      "reference": "references/events-streams.md",
+      "sha256": "e05ba5dda0a5ecc5bf15211962a7333d4d21d7f417da2e318c05c9300fdf5a23"
+    },
+    {
+      "source": "guides/routing.mdx",
+      "title": "Frontend Routing",
+      "reference": "references/frontend-integration.md",
+      "sha256": "6d2e12e577e9f2ff0f097e594393d75ed3296095da68b09718eb69a33d41eab0"
+    },
+    {
+      "source": "guides/security.mdx",
+      "title": "Security Best Practices",
+      "reference": "references/security-performance.md",
+      "sha256": "4f53e2f4fe7cee7151c87d26f3a460bf96c4631092c071be7fc1a0d95d6c0864"
+    },
+    {
+      "source": "guides/server-build.mdx",
+      "title": "Server Build",
+      "reference": "references/frontend-integration.md",
+      "sha256": "530562ed0900e953d62db526fa11e854d15d8d5ba79cb02a595cfdcce73c006b"
+    },
+    {
+      "source": "guides/single-instance.mdx",
+      "title": "Single Instance",
+      "reference": "references/distribution-updates.md",
+      "sha256": "9f596e0085de28167d388eaca524407aeeba44e071410bcbc5b9c3a75919173b"
+    },
+    {
+      "source": "guides/streams-from-websockets.mdx",
+      "title": "Migrating a WebSocket to Streams",
+      "reference": "references/events-streams.md",
+      "sha256": "bf9257b278856d1f556fc23d29c7073dc4d4c1e613fc9472a154809e7086f963"
+    },
+    {
+      "source": "guides/streams.mdx",
+      "title": "Streams",
+      "reference": "references/events-streams.md",
+      "sha256": "191a88d8a74599d31a75e6ab49dc0d0e1ecf74e060af5fe991fecb2a911904e9"
+    },
+    {
+      "source": "guides/testing.mdx",
+      "title": "Testing",
+      "reference": "references/development-testing.md",
+      "sha256": "35fd0fdec0b02e31ba5d38fe85a23a544954c7a935b0c0570d297e7984c9db4e"
+    },
+    {
+      "source": "guides/updater-github-release-assets.mdx",
+      "title": "GitHub Release Assets for the Updater",
+      "reference": "references/distribution-updates.md",
+      "sha256": "96d3b36224238041f24b101f4a57da855509eb059d6efe66d415231b940b680b"
+    },
+    {
+      "source": "guides/updater.mdx",
+      "title": "Updater",
+      "reference": "references/distribution-updates.md",
+      "sha256": "3ca1c0b6ff068d08c031f9a60a05ccd597ad83c9f8043d9caac107b8b4b92917"
+    },
+    {
+      "source": "guides/windows-uac.mdx",
+      "title": "Windows UAC Configuration",
+      "reference": "references/build-packaging.md",
+      "sha256": "95c07fa0089a69a4161332d0ee68ddfe0e1289bbf2aec3b56d49cd36194a2deb"
+    },
+    {
+      "source": "migration/v2-to-v3.mdx",
+      "title": "Migrating from v2 to v3",
+      "reference": "references/migration-troubleshooting.md",
+      "sha256": "4fee73e0ab1e24a1330ea7ca9b713e2ed2725973e6d7bc4d6ef6ce5d34d5e5cb"
+    },
+    {
+      "source": "quick-start/first-app.mdx",
+      "title": "Your First App",
+      "reference": "references/setup-cli.md",
+      "sha256": "a01c667c51079014092be696bf428a4f0402964c31cb13a2bcc366eb0aae7b5a"
+    },
+    {
+      "source": "quick-start/installation.mdx",
+      "title": "Installation",
+      "reference": "references/setup-cli.md",
+      "sha256": "1b5a0423ed7fb93c6a3458cc6ed02c83565ab3cbe6dd33f38233d92870cf7c7a"
+    },
+    {
+      "source": "quick-start/next-steps.mdx",
+      "title": "Next Steps",
+      "reference": "references/setup-cli.md",
+      "sha256": "94a2cb3a569bbc4c2af765fd753a1f44ec1432469403d240551fc933104ba7da"
+    },
+    {
+      "source": "quick-start/why-wails.mdx",
+      "title": "Why Wails?",
+      "reference": "references/setup-cli.md",
+      "sha256": "1f2621ff63c87b4e18098037001785128423ecd7513d99d7d676c2f894b6a3a9"
+    },
+    {
+      "source": "reference/application.mdx",
+      "title": "Application API",
+      "reference": "references/api-reference.md",
+      "sha256": "bf91a017be621da7ca48ddd1609795a0aeebc9525a41fdd9fb571b07852bf556"
+    },
+    {
+      "source": "reference/cli.mdx",
+      "title": "CLI Reference",
+      "reference": "references/api-reference.md",
+      "sha256": "9ebaa3f03085105c0472efaeef32a62cad6165e46a4bfd4e2279d563ca27fa1c"
+    },
+    {
+      "source": "reference/dialogs.mdx",
+      "title": "Dialogs API",
+      "reference": "references/api-reference.md",
+      "sha256": "aae8c0cc565033a0c6ac12bb0d5959d3ee0d00b7c332ba4f6b5c090ba0de75fc"
+    },
+    {
+      "source": "reference/events.mdx",
+      "title": "Events API",
+      "reference": "references/api-reference.md",
+      "sha256": "c5ef3d9471b69ce61efdd674aea66ca7014893d410e2c25deb676ba1b3e93ca0"
+    },
+    {
+      "source": "reference/frontend-runtime.mdx",
+      "title": "Frontend Runtime",
+      "reference": "references/api-reference.md",
+      "sha256": "b669a36e76cb4c0d8afab881c788e3ed72c61bdf239f818ef0277977f7f88521"
+    },
+    {
+      "source": "reference/menu.mdx",
+      "title": "Menu API",
+      "reference": "references/api-reference.md",
+      "sha256": "0c0a6fe50b961c82c6c87d649f93b97176513ff6efedef971452e1e9f2820604"
+    },
+    {
+      "source": "reference/overview.mdx",
+      "title": "API Reference",
+      "reference": "references/api-reference.md",
+      "sha256": "6b4073cffefa59065596274bab05d08e617e98eb8ba5e94695f0fa93929a50eb"
+    },
+    {
+      "source": "reference/update-manifest.mdx",
+      "title": "Update Manifest Protocol",
+      "reference": "references/api-reference.md",
+      "sha256": "35c16d6f3132e80e45e30e447bf2084cec84252707193c7d866870d4961f1fab"
+    },
+    {
+      "source": "reference/window.mdx",
+      "title": "Window API",
+      "reference": "references/api-reference.md",
+      "sha256": "0e98a2bc11a31078f15e40fb818c672fb0a9ea8303161bc690ca043bef27d73b"
+    },
+    {
+      "source": "status.mdx",
+      "title": "Roadmap",
+      "reference": "references/migration-troubleshooting.md",
+      "sha256": "b58f5cbde3edcc7dd307bbab8b36a49e42c0d8ef3636adee808b06300ae26305"
+    },
+    {
+      "source": "troubleshooting/mac-syso.mdx",
+      "title": "Syso files on macOS",
+      "reference": "references/migration-troubleshooting.md",
+      "sha256": "663628766cd7324669e84edf046f70b1178a06eb9e12d7177407f0f8856ef049"
+    },
+    {
+      "source": "troubleshooting/windows/rdp.mdx",
+      "title": "WebView2 hangs over Remote Desktop (RDP)",
+      "reference": "references/migration-troubleshooting.md",
+      "sha256": "ea688ece6394d991c171a99b24f1200537a2d92fdb3d0c13469cba22358f5bc3"
+    },
+    {
+      "source": "tutorials/01-creating-a-service.mdx",
+      "title": "QR Code Service",
+      "reference": "references/tutorial-patterns.md",
+      "sha256": "f334a6d029d24434ea17bb5331e2bc92e44fd0d4833457e1fdb0aecb329c3a28"
+    },
+    {
+      "source": "tutorials/02-todo-vanilla.mdx",
+      "title": "TODO List",
+      "reference": "references/tutorial-patterns.md",
+      "sha256": "e057f22a83a470e2790b8e8ede180e61da7cc22c3d6e190bcd122d5b69451c32"
+    },
+    {
+      "source": "tutorials/03-notes-vanilla.mdx",
+      "title": "Notes",
+      "reference": "references/tutorial-patterns.md",
+      "sha256": "9db54bfe98dfadeb6f2491e49294a48bdf49ace37d7ae828a7ca565bd1d0213d"
+    },
+    {
+      "source": "tutorials/04-self-update-a-wails-app.mdx",
+      "title": "Self-Updating Wails App",
+      "reference": "references/tutorial-patterns.md",
+      "sha256": "bbab26477cb15db5318203e347cbae9dd6b6f1d8bf79c5de026e5a8d1e2558b7"
+    },
+    {
+      "source": "tutorials/overview.mdx",
+      "title": "Tutorials",
+      "reference": "references/tutorial-patterns.md",
+      "sha256": "54f822db5c278998fa8f2caeed25c737d4e6a8d201c028fb5084b5082c22a899"
+    }
+  ]
+}
+
