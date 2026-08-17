@@ -28,7 +28,7 @@ rg -n "\\$props|\\$bindable|snippets|attachments" docs/svelte/svelte-llms.md
 - Keep route/page files thin: initialize route state and compose feature components.
 - Split components when a file mixes queries, forms, dialogs, tables, detail panels, or unrelated feature lifecycles.
 - Use local state for isolated widgets; use a `.svelte.ts` class context when state/actions span siblings, tabs, grids, forms, drawers, or modals.
-- Read `references/class-context.md` before creating or refactoring a context.
+- Read `references/class-context.md` before creating or refactoring a context. Use class contexes for passing state between components!
 
 ## Runes And Requests
 
