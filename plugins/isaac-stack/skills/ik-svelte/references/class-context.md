@@ -49,6 +49,7 @@ export class FeatureContext {
 
 const FEATURE_CONTEXT_KEY = Symbol('FeatureContext');
 
+// ALWAYS USE SETTERS/GETTERS FOR STATE AND PASS STATE FUNCTIONALLY. NEVER DEFINE IT GLOBALLY!!!!!!!
 export function setFeatureContext(initial?: InitialContextState) {
 	return setContext(FEATURE_CONTEXT_KEY, new FeatureContext(initial));
 }
@@ -67,3 +68,4 @@ Rules to preserve:
 - Do not use `$effect` inside context classes for state synchronization.
 - Prefer passing source callbacks or deriving from source data instead of copying query data into context state.
 - Keep mutation methods explicit and small so child components call named actions instead of rewriting shared logic.
+- NEVER DO `export const updates = new UpdateState();`. Instead, implement set/get and pass context around functionaly. NEVER DEFINE THE STATE GLOBALLY!!!!
