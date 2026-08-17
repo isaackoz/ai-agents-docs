@@ -1,6 +1,6 @@
 {
   "name": "isaac-stack",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Reusable Codex skills for Isaac's Go, SvelteKit SPA, and ConnectRPC stack.",
   "author": {
     "name": "Isaac Koz"
